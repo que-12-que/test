@@ -16,11 +16,18 @@ public class temp {
 //            b = c;
 //        }
 //        System.out.println(a);
-        System.out.println(1&1);
-        int m = 1;
-        int temp = 3;
-        while ((m & temp) == 0) {
-            m = m<<1;
+//        System.out.println(1&1);
+
+//        int m = 1;
+//        int temp = 3;
+//        while ((m & temp) == 0) {
+//            m = m<<1;
+//        }
+        // 分割符
+        String str = "havananvzxnnANDvlzkvnznvANDlzvknkvnakANDdnvvz";
+        String[] res = str.split("AND");
+        for (String s1 : res) {
+            System.out.println(s1);
         }
     }
 }

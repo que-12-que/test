@@ -8,7 +8,14 @@ public class temp {
     public static void main(String[] args) {
         StringBuffer s = new StringBuffer();
         Map<Integer, Integer> map  = new HashMap<>();
+        map.put(1, 2);
+        map.put(4,5);
         Iterator<Map.Entry<Integer, Integer>> iterator = map.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<Integer, Integer> entry = iterator.next();
+            System.out.println(entry.getValue());
+            System.out.println(entry.getKey());
+        }
 //        int a = 7, b = 7;
 //        while (b != 0) {
 //            int c = (a & b) << 1;
